@@ -49,7 +49,18 @@
       <!-- Like Section -->
       <section>
         <div class="container container-3">
-          <img src="imges/like-icon.png" alt="Thumbs-up like icon" />
+          <button class="like-button" aria-label="Like this post">
+            <img
+              class="icon outline"
+              src="imges/like-icon.png"
+              alt="heart outline"
+            />
+            <img
+              class="icon filled"
+              src="imges/like-icon-filled.png"
+              alt="filled heart"
+            />
+          </button>
           <img src="imges/comment-icon.png" alt="Comment bubble icon" />
           <img src="imges/share-icon.png" alt="Share icon" />
         </div>
@@ -58,7 +69,7 @@
     <!-- Comment Section  -->
     <footer>
       <div class="container container-4">
-        <h1>21,492 likes</h1>
+        <h1 id="like-count">21,492 likes</h1>
         <p><span>vinceylol</span> just took a few mushrooms</p>
       </div>
     </footer>

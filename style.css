@@ -47,38 +47,74 @@ header {
   border-radius: 50%;
 }
 .post-details h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .post-details p {
-    margin-top: 0;
-    margin-bottom: 13px;
-
+  margin-top: 0;
+  margin-bottom: 13px;
 }
 .van-gogh-post {
-    height: 23.4375rem;
-    width: 23.4375rem;
-    margin-top: 0;
+  height: 23.4375rem;
+  width: 23.4375rem;
+  margin-top: 0;
 }
 .container-3 {
-    display: flex;
-    margin: 15px auto 11.87px;
-    gap: 20px;
+  display: flex;
+  margin: 15px auto 11.87px;
+  gap: 20px;
 }
 .container-4 {
-    margin: 0 auto;
-    display: flex;
-    flex-direction:column;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .container-4 h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .container-4 p {
-    margin-top: 7px;
+  margin-top: 7px;
 }
-.container-3 img:hover {
-    background-color: red;
+.like-button:hover .like-icon,
+.like-button:active .like-icon {
+  background-image: url("imges/like-icon-filled.png");
+}
+.icon {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 24px;
+}
+.like-button.liked .filled {
+  opacity: 1;
+}
+.outline {
+  z-index: 2;
+}
+.filled {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.like-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  position: relative;
+  width: 25px;
+  height: 24px;
+  transition: transform 0.1s ease;
 }
 span {
-    font-weight: 700;
+  font-weight: 700;
+}
+.like-button:hover .filled {
+  opacity: 1;
+}
+
+.like-button:active {
+  transform: scale(0.9);
 }
